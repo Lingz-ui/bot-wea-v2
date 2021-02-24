@@ -1,20 +1,20 @@
-// menu fitur bot, edit aja temen gw yg maksa ganti 
+// menu fitur bot, edit aja temen gw yg maksa ganti L-mo
 const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam, tanggal) => { 
 	return `
 
-Follow ig *@awcringe.tolol*
+follow ig *@awcringe.tolol*
 
-_*RULES*_
+baca ampe abis nih penting banget soalnya..
 
-*Welcome to DarkBot by julian*
+*Welcome to TirsBot by julian*
 Sebelum menggunakan bot
  ${prefix}daftar terlebih dahulu
-Hai Kamu This is DarkBot/By julian
+Hai Kamu This is TirsBott/By julian
 
 Mau tau ownernya kak ? ketik  *${prefix}owner*
 Mau donasi biar bot jalan terus ? ketik *${prefix}donasi*
 
-_*NOTE*_
+_*NOTE PENTING !!*_
 Telfon & vc = auto block + ban
 unban + unblock = hubungi owner
 
@@ -24,106 +24,47 @@ prefix " ${prefix} "
 
 ❐ *jam*        : *${jam} WIB*
 ❐ *tanggal*  : *${tanggal}*
-❐  *runtime* : *${kyun(uptime)}
+❐ *runtime* : *${kyun(uptime)}
 
-╔[ *¢MENU BOT* ]
-║
-╠➤ ${prefix}playmp3 ( link )
-╠➤ ${prefix}anjing
-╠➤ ${prefix}kucing
-╠➤ ${prefix}toimg ( reply sticker
-╠➤ ${prefix}tupai ( reply vn/audio)
-╠➤ ${prefix}bass ( reply vn/audio
-╠➤ ${prefix}tahta
-╠➤ ${prefix}ttp
-╠➤ ${prefix}tts
-╠➤ ${prefix}persengay
-╠➤ ${prefix}pbucin
-╠➤ ${prefix}katailham
-╠➤ ${prefix}pantum
-╠➤ ${prefix}katacinta ( alay anjing )
-╠➤ ${prefix}bucin
-╠➤ ${prefix}katabijak
-╚➤ ${prefix}fakta
+langsung ke menunya aja kuy, enjoy wahai user ku >_<
 
-╔[ *¢Fun Group* ]
-║
-╠➤ ${prefix}PornHub step brother
-╠➤ ${prefix}gifstiker
-╠➤ ${prefix}sticker
-╠➤ ${prefix}Dorking
-╠➤ ${prefix}hilih
-╠➤ ${prefix}fitnah
-╠➤ ${prefix}tebakgambar
-╠➤ ${prefix}darkjokes
-╠➤ ${prefix}xvideos japan
-╠➤ ${prefix}playstore nama aplikasi
-╠➤ ${prefix}igstalk apa ignya
-╠➤ ${prefix}brainly pertanyaan
-╠➤ ${prefix}mimpi kepala charger
-╠➤ ${prefix}artinama siapa nama lu
-╠➤ ${prefix}jamdunia Jakarta misalnya
-╠➤ ${prefix}jadwaltv mnctv
-╚➤ ${prefix}caklontong
+[ *menu bot Tirs* ]
 
-╔[ *GrupMenu* ]
-║
-╠➤ ${prefix}tagme
-╠➤ ${prefix}kick @member
-╠➤ ${prefix}demote @admin
-╠➤ ${prefix}promote @member
-╠➤ ${prefix}tagall
-╠➤ ${prefix}hidetag
-╠➤ ${prefix}ownergrup
-╠➤ ${prefix}welcome on╠➤ ${prefix}off
-╚➤ ${prefix}grup buka╠➤ ${prefix}tutup ( kalo bot jadi admin
+⨵${prefix}sticker ( reply foto )
+⨵${prefix}ownermenu ( khusus owner )
+⨵${prefix}playmp3 (Link)
+⨵${prefix}attp ( kata katanya )
+⨵${prefix}stickergif
+⨵${prefix}fitnah @tagmember|katakata|balasanbot
+⨵${prefix}toimg
+⨵${prefix}owner
+⨵${prefix}donasi
+⨵${prefix}igstalk (nama ig lu apa ngab )
+⨵${prefix}tupai ( reply vn )
+⨵${prefix}nightcore ( reply vn )
+⨵${prefix}bass ( reply vn )
+⨵${prefix}darkjokes
+⨵${prefix}tebakgambar
+⨵${prefix}anjing
+⨵${prefix}kucing
+⨵${prefix}brainly Pertanyaan
 
-¢Hanya owner yang bisa akses menu ini
 
-➤ ${prefix}ownermenu (private)
+{*18+*}
+⨵${prefix}nsfw on/off
+⨵${prefix}hentai ( ketik ${prefix}modeanime on. on ngab )
+⨵${prefix}pornhub stepFather
+⨵${prefix}xvideos step mom
 
-╔[ *18+ menu om :v* ]
-║
-╠➤ ${prefix}nsfw on/off
-╠➤ ${prefix}modeanime on/(on kan dulu)
-╠➤ ${prefix}hentai
-╠➤ ${prefix}nsfwblowjob
-╠➤ ${prefix}nsfwloli
-╚➤ ${prefix}nsfwneko
+For group menu ketik *×${prefix}gcmenu*
 
-╔[ *WeeaBoo menu anjing* ]
-║
-╠➤ ${prefix}boruto
-╠➤ ${prefix}naruto
-╠➤ ${prefix}minato
-╠➤ ${prefix}hinata
-╠➤ ${prefix}sakura
-╠➤ ${prefix}sasuke
-╠➤ ${prefix}toukachan
-╠➤ ${prefix}rize
-╠➤ ${prefix}akira
-╠➤ ${prefix}itori
-╠➤ ${prefix}kurumi
-╠➤ ${prefix}miku
-╠➤ ${prefix}anime
-╠➤ ${prefix}animecry
-╠➤ ${prefix}animekiss
-╚➤ ${prefix}neonime
+Owner sc : zann
 
-╔[ *Menu Ngontol* ]
-║
-╠➤ ${prefix}spamcall 08xxxxx
-╚➤ ${prefix}spamgmail bapaklu@gmail.com
 
-╔[ *creator* ]
-║
-╠➤ *O BOT*
-╠➤ *M. HADI FIRMANSYA*
-╠➤ *DELIA AULIA*
-╠➤ *KEVIN DAVID*
-╠➤ *FXC7*
-╠➤ *L-M0* 
-╚➤ *PANJUL* 
+┌[ Creator ]
+│                                                  
+├➤ *𝗟-𝗠𝟬*
+└➤ *𝗝𝘂𝗹𝗶𝗮𝗻*
 `
 }
 
