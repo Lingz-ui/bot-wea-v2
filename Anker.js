@@ -42,6 +42,7 @@ const cd = 4.32e+7
 const lolis = require('lolis.life')
 const loli = new lolis()
 const { ownermenu } = require('./src/ownermenu')
+const { gcmenu } = require('./src/gcmenu')
 const { BarBarApi, ZeksApi, TechApi, TobzApi, ItsApi, VthearApi } = JSON.parse(fs.readFileSync('./database/json/apikey.json'))
 const setting = JSON.parse(fs.readFileSync('./database/json/setting.json'))
 const welkom = JSON.parse(fs.readFileSync('./database/json/welkom.json'))
@@ -375,7 +376,18 @@ async function starts() {
                 const tanggal = `${thisDay}, ${day} - ${myMonths[bulan]} - ${year}`
 					await costum(help(prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam, tanggal), text, FarhanGans, rmenu)
     				break
-
+                                case 'gcmenu':
+                                if (!isGroup) return reply(mess.only.group)
+			        if (!isGroupAdmins) return reply(mess.only.admin)
+                                client.sendMessage(from, gcmenu(prefix), text, {
+					contextInfo: {
+					participant: '0@s.whatsapp.net',
+					quotedMessage: {
+					conversation: '*_group_*'
+					}
+					}
+					})
+    				break
 				case 'bahasa':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
