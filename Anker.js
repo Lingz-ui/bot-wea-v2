@@ -796,17 +796,7 @@ async function starts() {
 					const tik = can[Math.floor(Math.random() * can.length)]
 					client.sendMessage(from, 'Pertanyaan : Cantik Cek Kakak *'+cantik+'*\n\nPersen Kecantikan : '+ tik +'', text, { quoted: mek })
 					break
-                                  case 'afk':
-                                        tels = body.slice(4)
-                                        if (args.length < 1) return reply('kakak afk karena apa?')
-                                        if (!isUser) return reply(mess.only.daftarB)
-                                        var nom = mek.participant
-                                        const tag = {
-                                                text: `@${nom.split("@s.whatsapp.net")[0]} *SEDANG AFK ${tels} JANGAN GANGGU YA*`,
-                                                contextInfo: { mentionedJid: [nom] }
-                                        }
-                                        client.sendMessage(from, tag, text, {quoted: mek})
-                                        break
+                                  
 				  case 'ownergrup':
 				  case 'ownergroup':
                client.updatePresence(from, Presence.composing) 
