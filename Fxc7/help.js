@@ -61,9 +61,18 @@ For group menu ketik *×${prefix}gcmenu*
 Owner sc : zann
 
 
-┌[ Creator ]
-│                                                  
-└➤ *𝗝𝘂𝗹𝗶𝗮𝗻*
+╭─────「 *SUPPORT ${name}* 」
+┴
+│➲ *O BOT*
+│➲ *M. HADI FIRMANSYA*
+│➲ *DELIA AULIA*
+│➲ *KEVIN DAVID*
+│➲ *MY TEAM FXC7 BOT*
+│➲ *CONTENT CREATOR BOT WHATSAPP*
+│➲ *FXC7*
+│➲ L-M0
+┬
+╰────────────────────────
 `
 }
 
