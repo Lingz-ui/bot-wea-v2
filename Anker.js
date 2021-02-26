@@ -381,16 +381,46 @@ async function starts() {
 					await costum(help(prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam, tanggal), text, FarhanGans, rmenu)
     				break
                                 case 'makermenu':
-			          client.sendMessage(from, mak(prefix), text)
-			        break
+			          client.sendMessage(from, mak(prefix), text, {
+					contextInfo: {
+					participant: '0@s.whatsapp.net',
+					quotedMessage: {
+					conversation: '*_Maker_*'
+					}
+					}
+					})
+    				break
+			        
 		                case 'animemenu':
-			          client.sendMessage(from, ani(prefix), text)
-			        break
+			          client.sendMessage(from, ani(prefix), text, {
+					contextInfo: {
+					participant: '0@s.whatsapp.net',
+					quotedMessage: {
+					conversation: '*_Anime_*'
+					}
+					}
+					})
+    				break
+			        
                                 case 'funmenu':
-			          client.sendMessage(from, pun(prefix), text)
+			          client.sendMessage(from, pun(prefix), text, {
+					contextInfo: {
+					participant: '0@s.whatsapp.net',
+					quotedMessage: {
+					conversation: '*_Anime_*'
+					}
+					}
+					})
 			        break
 		                case 'nsfwmenu':
-			          client.sendMessage(from, sange(prefix), text)
+			          client.sendMessage(from, sange(prefix), text, {
+					contextInfo: {
+					participant: '0@s.whatsapp.net',
+					quotedMessage: {
+					conversation: '*_Anime_*'
+					}
+					}
+					})
 			        break
                                 case 'gcmenu':
                                 if (!isGroup) return reply(mess.only.group)
