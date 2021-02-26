@@ -43,6 +43,10 @@ const lolis = require('lolis.life')
 const loli = new lolis()
 const { ownermenu } = require('./src/ownermenu')
 const { gcmenu } = require('./src/gcmenu')
+const { mak } = require('./src/mak') // dah
+const { ani } = require('./src/ani') // dah
+const { sange } = require('./src/sange') // dah
+const { pun } = require('./src/pun') // dah
 const { BarBarApi, ZeksApi, TechApi, TobzApi, ItsApi, VthearApi } = JSON.parse(fs.readFileSync('./database/json/apikey.json'))
 const setting = JSON.parse(fs.readFileSync('./database/json/setting.json'))
 const welkom = JSON.parse(fs.readFileSync('./database/json/welkom.json'))
@@ -376,6 +380,18 @@ async function starts() {
                 const tanggal = `${thisDay}, ${day} - ${myMonths[bulan]} - ${year}`
 					await costum(help(prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam, tanggal), text, FarhanGans, rmenu)
     				break
+                                case 'makermenu':
+			          client.sendMessage(from, mak(prefix), text)
+			        break
+		                case 'animemenu':
+			          client.sendMessage(from, ani(prefix), text)
+			        break
+                                case 'funmenu':
+			          client.sendMessage(from, pun(prefix), text)
+			        break
+		                case 'nsfwmenu':
+			          client.sendMessage(from, sange(prefix), text)
+			        break
                                 case 'gcmenu':
                                 if (!isGroup) return reply(mess.only.group)
 			        if (!isGroupAdmins) return reply(mess.only.admin)
