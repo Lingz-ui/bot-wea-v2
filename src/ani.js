@@ -1,0 +1,17 @@
+const ani = (prefix) => { 
+	return `
+┏[𝗔𝗻𝗶𝗺𝗲-𝗠𝗘𝗡𝗨]
+┃
+┣➣ *${prefix}modeanime on/off
+┣➣ *${prefix}naruto
+┣➣ *${prefix}Minato
+┣➣ *${prefix}boruto
+┣➣ *${prefix}sakura
+┣➣ *${prefix}kakashi
+┣➣ *${prefix}rize
+┣➣ *${prefix}akira
+┣➣ *${prefix}itori
+┗➣ *${prefix}anime
+`
+}
+exports.ani = ani
