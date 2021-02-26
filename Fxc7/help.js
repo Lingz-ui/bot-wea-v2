@@ -2,77 +2,37 @@
 const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam, tanggal) => { 
 	return `
 
-follow ig *@awcringe.tolol*
-
-baca ampe abis nih penting banget soalnya..
-
-*Welcome to TirsBot by julian*
-Sebelum menggunakan bot
- ${prefix}daftar terlebih dahulu
-Hai Kamu This is TirsBott/By julian
-
-Mau tau ownernya kak ? ketik  *${prefix}owner*
-Mau donasi biar bot jalan terus ? ketik *${prefix}donasi*
-
-_*NOTE PENTING !!*_
-Telfon & vc = auto block + ban
-unban + unblock = hubungi owner
-
-prefix " ${prefix} "
-
-*prefix adalah suatu bubuh kata diawal kalimat*
-
+Welcome to simple Bot tirs
 ❐ *jam*        : *${jam} WIB*
 ❐ *tanggal*  : *${tanggal}*
 ❐ *runtime* : *${kyun(uptime)}
 
-langsung ke menunya aja kuy, enjoy wahai user ku >_<
+*Prefix : "${prefix}"*
 
-[ *menu bot Tirs* ]
+```Prefix adalah suatu bubuh kata yang dimana dibutuhkan untuk mengakses suatu menu bot```
 
-⨵${prefix}sticker ( reply foto )
-⨵${prefix}ownermenu ( khusus owner )
-⨵${prefix}playmp3 (Link)
-⨵${prefix}attp ( kata katanya )
-⨵${prefix}stickergif
-⨵${prefix}fitnah @tagmember|katakata|balasanbot
-⨵${prefix}toimg
-⨵${prefix}owner
-⨵${prefix}donasi
-⨵${prefix}igstalk (nama ig lu apa ngab )
-⨵${prefix}tupai ( reply vn )
-⨵${prefix}nightcore ( reply vn )
-⨵${prefix}bass ( reply vn )
-⨵${prefix}darkjokes
-⨵${prefix}tebakgambar
-⨵${prefix}anjing
-⨵${prefix}kucing
-⨵${prefix}brainly Pertanyaan
+_Berikut adalah menu Simple Bot Tirs/By julian_
 
+͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏┏[𝗠𝗘𝗡𝗨]
+┃
+┣➣ *${prefix}ownermenu* ( khusus owner )
+┣➣ *${prefix}funmenu*
+┣➣ *${prefix}nsfwmenu* (18+, gc only)
+┣➣ *${prefix}gcmenu*
+┣➣ *${prefix}makermenu*
+┗➣ *${prefix}animemenu*
 
-{*18+*}
-⨵${prefix}nsfw on/off
-⨵${prefix}hentai ( ketik ${prefix}modeanime on. on ngab )
-⨵${prefix}pornhub stepFather
-⨵${prefix}xvideos step mom
-
-For group menu ketik *×${prefix}gcmenu*
-
-Owner sc : zann
-
-
-╭─────「 *SUPPORT ${name}* 」
-┴
-│➲ *O BOT*
-│➲ *M. HADI FIRMANSYA*
-│➲ *DELIA AULIA*
-│➲ *KEVIN DAVID*
-│➲ *MY TEAM FXC7 BOT*
-│➲ *CONTENT CREATOR BOT WHATSAPP*
-│➲ *FXC7*
-│➲ L-M0
-┬
-╰────────────────────────
+┏━「 *SUPPORT* 」
+┃
+┣➣ *O BOT*
+┣➣ *M. HADI FIRMANSYA*
+┣➣ *DELIA AULIA*
+┣➣ *KEVIN DAVID*
+┣➣ *MY TEAM FXC7 BOT*
+┣➣ *CONTENT CREATOR BOT WHATSAPP*
+┣➣ *FXC7*
+┣➣ *L-M0*
+┗━━━━━━━━━━━━━━
 `
 }
 
