@@ -81,6 +81,8 @@ prefix = "!"
 name = "owipspabot"
 rdaftar = "TERIMA KASIH TELAH DAFTAR MENJADI TEMEN owipspabot😁"
 rmenu = "HAI TEMEN owipspabot👋 JANGAN LUPA DONASI YAA:)"
+numbernye = '0'
+fake = 'Not-Found'
 limitt = 100
 ban = []
 
@@ -381,43 +383,77 @@ async function starts() {
 					await costum(help(prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam, tanggal), text, FarhanGans, rmenu)
     				break
                                 case 'makermenu':
-			          client.sendMessage(from, mak(prefix), text, {
+                                  runtime = process.uptime()
+				teks = `${kyun(runtime)}`
+				//result = fs.readFileSync(`./src/sticker/bleee.webp`)
+				var itsme = `${numbernye}@s.whatsapp.net`
+				var split = `${fake}`
+				// var taged = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
+				const njir = {
 					contextInfo: {
-					participant: '0@s.whatsapp.net',
-					quotedMessage: {
-					conversation: '*_Maker_*'
+						participant: itsme,
+						quotedMessage: {
+							extendedTextMessage: {
+								text: split,
+							}
+						}
 					}
-					}
-					})
-    				break
+				}
+                                   
+			          client.sendMessage(from, mak(prefix), text, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: {  "imageMessage":{"url":"https://mmg.whatsapp.net/d/f/AuDB-5DeyrpWCEilqUEo6aQiGWoC7wokZCtOBMa5rBlf.enc","mimetype":"image/jpeg","caption": "MAKER MENU","fileSha256":"G5MnnH4Q9T+gKLqdtjKYENDGm0cOxJFFFRuYzXmgERM=","fileLength":"10497","height":512,"width":512,"mediaKey":"F+DBSNDaBWzF1gpv9SLz2GmGV7pibwnZB6fBDGSoiGE=","fileEncSha256":"h9DfrTlDKgEJF1hBwL45Y9sdzoKbt9eNjzLeDm7Ho8I=","directPath":"/v/t62.7118-24/13798009_3843954818960231_4095711678282891550_n.enc?oh=71b3cc99cf8970ad9949e5a5081335c6&oe=60454C93","mediaKeyTimestamp":"1612344675","jpegThumbnail":"/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABERERESERMVFRMaHBkcGiYjICAjJjoqLSotKjpYN0A3N0A3WE5fTUhNX06MbmJiboyiiIGIosWwsMX46/j///8BERERERIRExUVExocGRwaJiMgICMmOiotKi0qOlg3QDc3QDdYTl9NSE1fToxuYmJujKKIgYiixbCwxfjr+P/////CABEIAGAAYAMBIgACEQEDEQH/xAAwAAABBQEBAAAAAAAAAAAAAAAFAAECAwQGBwEBAQEBAAAAAAAAAAAAAAAAAAECA//aAAwDAQACEAMQAAAAAySyUkToW5DRaKRN5cO+2QNpudgekhbc9meumRKxofZnD6hVnvYwShKYwqcpaDADKvo0fO52de3HLTr8/LlE1J5ZQO5hYgdOioSeJVdTcK9swdcSSDwvNrOTv0Yy6VDjzpRoqihHARg17rqVp5npeYSTt1Byy6jliejMwY3SR//EADIQAAICAgECBAUCBAcAAAAAAAECAAMEERIhMQUTQVEQIlJxgRQVIzJhkiAzNENikaL/2gAIAQEAAT8A2JyE2J6bnITkIp6iXf6hftEVnOgu4cFlpaxmA0O0P+W0SysAAmcUnFJxr9pUypWny9xLK0UqUrX5oh+UdB/1HYiBA45FRKERSdTNt41rUD1PUxSuiDAlH0/4EyEakKe8DHQE8+qsjm4EPl3JtWE5pTQx5dhK8lbGJrDTIJNmyfQT8z8/DURDomV1HkNCY2GGIZxMnHw1G3RekZMe7rWNAe0vteiwro6nhniAd/Lav8zxFEV0K+ompr+s23tNt7RMxUZkcEGYuRT0267lVyMOjCZFCXpoxfC1T+RiI3huORu1x99xbPCcP/eTY9juZObRmFWp3pekbn04zV30zkYCzHQEvxMxLS70OA3aFid9Z19GIge4drX/ALjGtuBA85/7jDs92J+5n2mGhrq6ggkwn5YHbXeY2Ob276UdzK8ejGRiQo492PYTP8Ze3aUbVOxf1aaBnGajdbADNQKWOgNmUZL0MUYbX1Uwsj1q6Hak/Dwuk04rOP52s4L/AE3PHMhv1H6VTqqqOdkBYkJE3H2HBgJlN9tB2mgffUyLXst5Mesqu4VXJ9QBH3EFqkDrPDMit0CEa23/AKE8fxQWTMTs/R4h0YOXxu0UiNtRDHCkdZQ4D6Y6B6GIlaqFIDEDuJi+JjGRV4BtWc5ZfZ4njWovFVR+bDu2jPEMBsO1QG5I68kafxBAz/TPMP0mMzMCOMUuBoAT+IfacD6mBOTBREatVCjehP29/wDjMLHNFwOxxYcW+xnilYfAb3xrOMHUCdoiva3FELGX1X0MFsXUX0+C5YqrZfJTqO8wMbjTzKjbzyz7CcochQZm2j9vy39LrRqDtK0e6xa07mY1FeMgVfyZlVJfUyN+DAGVmVu4PwADWIrHoWG55iIANgRbFbsdz//EABkRAQEBAAMAAAAAAAAAAAAAABEAARAgQP/aAAgBAgEBPwAhg6tjsQTxuTNusWeL/8QAHhEAAgICAgMAAAAAAAAAAAAAAAECERASEyAhMDH/2gAIAQMBAT8AKs1ZoxqswiNpfDZUSlazyV4NxyE81667f//Z","scansSidecar":"Za/tyQa9+QwV3W6vFrZo60cqmIUpsOOjZj8ee43fSnkCr6jqi+X+KA==","scanLengths":[2138,3433,1695,3231],"midQualityFileSha256":"PQcFlPxxsWq2d3kURuOykkyIKAndOgvIqnpfQFygkl8=","midQualityFileEncSha256":"DAiEXrA3YYndBpt+/+E6owWtMMBG0lgCL8kkU9ciCKY="}}}})
+
+				   break
+    				
 			        
 		                case 'animemenu':
-			          client.sendMessage(from, ani(prefix), text, {
+                                   runtime = process.uptime()
+				teks = `${kyun(runtime)}`
+				//result = fs.readFileSync(`./src/sticker/bleee.webp`)
+				var itsme = `${numbernye}@s.whatsapp.net`
+				var split = `${fake}`
+				// var taged = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
+				const njir = {
 					contextInfo: {
-					participant: '0@s.whatsapp.net',
-					quotedMessage: {
-					conversation: '*_Anime_*'
+						participant: itsme,
+						quotedMessage: {
+							extendedTextMessage: {
+								text: split,
+							}
+						}
 					}
-					}
-					})
-    				break
+				}
+                                   
+			          client.sendMessage(from, ani(prefix), text, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: {  "imageMessage":{"url":"https://mmg.whatsapp.net/d/f/AuDB-5DeyrpWCEilqUEo6aQiGWoC7wokZCtOBMa5rBlf.enc","mimetype":"image/jpeg","caption": "ih weaboo","fileSha256":"G5MnnH4Q9T+gKLqdtjKYENDGm0cOxJFFFRuYzXmgERM=","fileLength":"10497","height":512,"width":512,"mediaKey":"F+DBSNDaBWzF1gpv9SLz2GmGV7pibwnZB6fBDGSoiGE=","fileEncSha256":"h9DfrTlDKgEJF1hBwL45Y9sdzoKbt9eNjzLeDm7Ho8I=","directPath":"/v/t62.7118-24/13798009_3843954818960231_4095711678282891550_n.enc?oh=71b3cc99cf8970ad9949e5a5081335c6&oe=60454C93","mediaKeyTimestamp":"1612344675","jpegThumbnail":"/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABERERESERMVFRMaHBkcGiYjICAjJjoqLSotKjpYN0A3N0A3WE5fTUhNX06MbmJiboyiiIGIosWwsMX46/j///8BERERERIRExUVExocGRwaJiMgICMmOiotKi0qOlg3QDc3QDdYTl9NSE1fToxuYmJujKKIgYiixbCwxfjr+P/////CABEIAGAAYAMBIgACEQEDEQH/xAAwAAABBQEBAAAAAAAAAAAAAAAFAAECAwQGBwEBAQEBAAAAAAAAAAAAAAAAAAECA//aAAwDAQACEAMQAAAAAySyUkToW5DRaKRN5cO+2QNpudgekhbc9meumRKxofZnD6hVnvYwShKYwqcpaDADKvo0fO52de3HLTr8/LlE1J5ZQO5hYgdOioSeJVdTcK9swdcSSDwvNrOTv0Yy6VDjzpRoqihHARg17rqVp5npeYSTt1Byy6jliejMwY3SR//EADIQAAICAgECBAUCBAcAAAAAAAECAAMEERIhMQUTQVEQIlJxgRQVIzJhkiAzNENikaL/2gAIAQEAAT8A2JyE2J6bnITkIp6iXf6hftEVnOgu4cFlpaxmA0O0P+W0SysAAmcUnFJxr9pUypWny9xLK0UqUrX5oh+UdB/1HYiBA45FRKERSdTNt41rUD1PUxSuiDAlH0/4EyEakKe8DHQE8+qsjm4EPl3JtWE5pTQx5dhK8lbGJrDTIJNmyfQT8z8/DURDomV1HkNCY2GGIZxMnHw1G3RekZMe7rWNAe0vteiwro6nhniAd/Lav8zxFEV0K+ompr+s23tNt7RMxUZkcEGYuRT0267lVyMOjCZFCXpoxfC1T+RiI3huORu1x99xbPCcP/eTY9juZObRmFWp3pekbn04zV30zkYCzHQEvxMxLS70OA3aFid9Z19GIge4drX/ALjGtuBA85/7jDs92J+5n2mGhrq6ggkwn5YHbXeY2Ob276UdzK8ejGRiQo492PYTP8Ze3aUbVOxf1aaBnGajdbADNQKWOgNmUZL0MUYbX1Uwsj1q6Hak/Dwuk04rOP52s4L/AE3PHMhv1H6VTqqqOdkBYkJE3H2HBgJlN9tB2mgffUyLXst5Mesqu4VXJ9QBH3EFqkDrPDMit0CEa23/AKE8fxQWTMTs/R4h0YOXxu0UiNtRDHCkdZQ4D6Y6B6GIlaqFIDEDuJi+JjGRV4BtWc5ZfZ4njWovFVR+bDu2jPEMBsO1QG5I68kafxBAz/TPMP0mMzMCOMUuBoAT+IfacD6mBOTBREatVCjehP29/wDjMLHNFwOxxYcW+xnilYfAb3xrOMHUCdoiva3FELGX1X0MFsXUX0+C5YqrZfJTqO8wMbjTzKjbzyz7CcochQZm2j9vy39LrRqDtK0e6xa07mY1FeMgVfyZlVJfUyN+DAGVmVu4PwADWIrHoWG55iIANgRbFbsdz//EABkRAQEBAAMAAAAAAAAAAAAAABEAARAgQP/aAAgBAgEBPwAhg6tjsQTxuTNusWeL/8QAHhEAAgICAgMAAAAAAAAAAAAAAAECERASEyAhMDH/2gAIAQMBAT8AKs1ZoxqswiNpfDZUSlazyV4NxyE81667f//Z","scansSidecar":"Za/tyQa9+QwV3W6vFrZo60cqmIUpsOOjZj8ee43fSnkCr6jqi+X+KA==","scanLengths":[2138,3433,1695,3231],"midQualityFileSha256":"PQcFlPxxsWq2d3kURuOykkyIKAndOgvIqnpfQFygkl8=","midQualityFileEncSha256":"DAiEXrA3YYndBpt+/+E6owWtMMBG0lgCL8kkU9ciCKY="}}}})
+
+				   break
+    				
 			        
                                 case 'funmenu':
-			          client.sendMessage(from, pun(prefix), text, {
+                                   runtime = process.uptime()
+				teks = `${kyun(runtime)}`
+				//result = fs.readFileSync(`./src/sticker/bleee.webp`)
+				var itsme = `${numbernye}@s.whatsapp.net`
+				var split = `${fake}`
+				// var taged = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
+				const njir = {
 					contextInfo: {
-					participant: '0@s.whatsapp.net',
-					quotedMessage: {
-					conversation: '*_Anime_*'
+						participant: itsme,
+						quotedMessage: {
+							extendedTextMessage: {
+								text: split,
+							}
+						}
 					}
-					}
-					})
-			        break
+				}
+			          client.sendMessage(from, pun(prefix), text, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: {  "imageMessage":{"url":"https://mmg.whatsapp.net/d/f/AuDB-5DeyrpWCEilqUEo6aQiGWoC7wokZCtOBMa5rBlf.enc","mimetype":"image/jpeg","caption": "nih menu seru seruan","fileSha256":"G5MnnH4Q9T+gKLqdtjKYENDGm0cOxJFFFRuYzXmgERM=","fileLength":"10497","height":512,"width":512,"mediaKey":"F+DBSNDaBWzF1gpv9SLz2GmGV7pibwnZB6fBDGSoiGE=","fileEncSha256":"h9DfrTlDKgEJF1hBwL45Y9sdzoKbt9eNjzLeDm7Ho8I=","directPath":"/v/t62.7118-24/13798009_3843954818960231_4095711678282891550_n.enc?oh=71b3cc99cf8970ad9949e5a5081335c6&oe=60454C93","mediaKeyTimestamp":"1612344675","jpegThumbnail":"/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABERERESERMVFRMaHBkcGiYjICAjJjoqLSotKjpYN0A3N0A3WE5fTUhNX06MbmJiboyiiIGIosWwsMX46/j///8BERERERIRExUVExocGRwaJiMgICMmOiotKi0qOlg3QDc3QDdYTl9NSE1fToxuYmJujKKIgYiixbCwxfjr+P/////CABEIAGAAYAMBIgACEQEDEQH/xAAwAAABBQEBAAAAAAAAAAAAAAAFAAECAwQGBwEBAQEBAAAAAAAAAAAAAAAAAAECA//aAAwDAQACEAMQAAAAAySyUkToW5DRaKRN5cO+2QNpudgekhbc9meumRKxofZnD6hVnvYwShKYwqcpaDADKvo0fO52de3HLTr8/LlE1J5ZQO5hYgdOioSeJVdTcK9swdcSSDwvNrOTv0Yy6VDjzpRoqihHARg17rqVp5npeYSTt1Byy6jliejMwY3SR//EADIQAAICAgECBAUCBAcAAAAAAAECAAMEERIhMQUTQVEQIlJxgRQVIzJhkiAzNENikaL/2gAIAQEAAT8A2JyE2J6bnITkIp6iXf6hftEVnOgu4cFlpaxmA0O0P+W0SysAAmcUnFJxr9pUypWny9xLK0UqUrX5oh+UdB/1HYiBA45FRKERSdTNt41rUD1PUxSuiDAlH0/4EyEakKe8DHQE8+qsjm4EPl3JtWE5pTQx5dhK8lbGJrDTIJNmyfQT8z8/DURDomV1HkNCY2GGIZxMnHw1G3RekZMe7rWNAe0vteiwro6nhniAd/Lav8zxFEV0K+ompr+s23tNt7RMxUZkcEGYuRT0267lVyMOjCZFCXpoxfC1T+RiI3huORu1x99xbPCcP/eTY9juZObRmFWp3pekbn04zV30zkYCzHQEvxMxLS70OA3aFid9Z19GIge4drX/ALjGtuBA85/7jDs92J+5n2mGhrq6ggkwn5YHbXeY2Ob276UdzK8ejGRiQo492PYTP8Ze3aUbVOxf1aaBnGajdbADNQKWOgNmUZL0MUYbX1Uwsj1q6Hak/Dwuk04rOP52s4L/AE3PHMhv1H6VTqqqOdkBYkJE3H2HBgJlN9tB2mgffUyLXst5Mesqu4VXJ9QBH3EFqkDrPDMit0CEa23/AKE8fxQWTMTs/R4h0YOXxu0UiNtRDHCkdZQ4D6Y6B6GIlaqFIDEDuJi+JjGRV4BtWc5ZfZ4njWovFVR+bDu2jPEMBsO1QG5I68kafxBAz/TPMP0mMzMCOMUuBoAT+IfacD6mBOTBREatVCjehP29/wDjMLHNFwOxxYcW+xnilYfAb3xrOMHUCdoiva3FELGX1X0MFsXUX0+C5YqrZfJTqO8wMbjTzKjbzyz7CcochQZm2j9vy39LrRqDtK0e6xa07mY1FeMgVfyZlVJfUyN+DAGVmVu4PwADWIrHoWG55iIANgRbFbsdz//EABkRAQEBAAMAAAAAAAAAAAAAABEAARAgQP/aAAgBAgEBPwAhg6tjsQTxuTNusWeL/8QAHhEAAgICAgMAAAAAAAAAAAAAAAECERASEyAhMDH/2gAIAQMBAT8AKs1ZoxqswiNpfDZUSlazyV4NxyE81667f//Z","scansSidecar":"Za/tyQa9+QwV3W6vFrZo60cqmIUpsOOjZj8ee43fSnkCr6jqi+X+KA==","scanLengths":[2138,3433,1695,3231],"midQualityFileSha256":"PQcFlPxxsWq2d3kURuOykkyIKAndOgvIqnpfQFygkl8=","midQualityFileEncSha256":"DAiEXrA3YYndBpt+/+E6owWtMMBG0lgCL8kkU9ciCKY="}}}})
+
+				   break
 		                case 'nsfwmenu':
 			          client.sendMessage(from, sange(prefix), text, {
 					contextInfo: {
 					participant: '0@s.whatsapp.net',
 					quotedMessage: {
-					conversation: '*_Anime_*'
+					conversation: '*dasar otak selangkangan*'
 					}
 					}
 					})
@@ -425,15 +461,40 @@ async function starts() {
                                 case 'gcmenu':
                                 if (!isGroup) return reply(mess.only.group)
 			        if (!isGroupAdmins) return reply(mess.only.admin)
-                                client.sendMessage(from, gcmenu(prefix), text, {
+                                runtime = process.uptime()
+				teks = `${kyun(runtime)}`
+				//result = fs.readFileSync(`./src/sticker/bleee.webp`)
+				var itsme = `${numbernye}@s.whatsapp.net`
+				var split = `${fake}`
+				// var taged = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
+				const njir = {
 					contextInfo: {
-					participant: '0@s.whatsapp.net',
-					quotedMessage: {
-					conversation: '*_group_*'
+						participant: itsme,
+						quotedMessage: {
+							extendedTextMessage: {
+								text: split,
+							}
+						}
 					}
-					}
+				}
+                                client.sendMessage(from, gcmenu(prefix), text, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: {  "imageMessage":{"url":"https://mmg.whatsapp.net/d/f/AuDB-5DeyrpWCEilqUEo6aQiGWoC7wokZCtOBMa5rBlf.enc","mimetype":"image/jpeg","caption": "hanya admin yang bisa pake","fileSha256":"G5MnnH4Q9T+gKLqdtjKYENDGm0cOxJFFFRuYzXmgERM=","fileLength":"10497","height":512,"width":512,"mediaKey":"F+DBSNDaBWzF1gpv9SLz2GmGV7pibwnZB6fBDGSoiGE=","fileEncSha256":"h9DfrTlDKgEJF1hBwL45Y9sdzoKbt9eNjzLeDm7Ho8I=","directPath":"/v/t62.7118-24/13798009_3843954818960231_4095711678282891550_n.enc?oh=71b3cc99cf8970ad9949e5a5081335c6&oe=60454C93","mediaKeyTimestamp":"1612344675","jpegThumbnail":"/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABERERESERMVFRMaHBkcGiYjICAjJjoqLSotKjpYN0A3N0A3WE5fTUhNX06MbmJiboyiiIGIosWwsMX46/j///8BERERERIRExUVExocGRwaJiMgICMmOiotKi0qOlg3QDc3QDdYTl9NSE1fToxuYmJujKKIgYiixbCwxfjr+P/////CABEIAGAAYAMBIgACEQEDEQH/xAAwAAABBQEBAAAAAAAAAAAAAAAFAAECAwQGBwEBAQEBAAAAAAAAAAAAAAAAAAECA//aAAwDAQACEAMQAAAAAySyUkToW5DRaKRN5cO+2QNpudgekhbc9meumRKxofZnD6hVnvYwShKYwqcpaDADKvo0fO52de3HLTr8/LlE1J5ZQO5hYgdOioSeJVdTcK9swdcSSDwvNrOTv0Yy6VDjzpRoqihHARg17rqVp5npeYSTt1Byy6jliejMwY3SR//EADIQAAICAgECBAUCBAcAAAAAAAECAAMEERIhMQUTQVEQIlJxgRQVIzJhkiAzNENikaL/2gAIAQEAAT8A2JyE2J6bnITkIp6iXf6hftEVnOgu4cFlpaxmA0O0P+W0SysAAmcUnFJxr9pUypWny9xLK0UqUrX5oh+UdB/1HYiBA45FRKERSdTNt41rUD1PUxSuiDAlH0/4EyEakKe8DHQE8+qsjm4EPl3JtWE5pTQx5dhK8lbGJrDTIJNmyfQT8z8/DURDomV1HkNCY2GGIZxMnHw1G3RekZMe7rWNAe0vteiwro6nhniAd/Lav8zxFEV0K+ompr+s23tNt7RMxUZkcEGYuRT0267lVyMOjCZFCXpoxfC1T+RiI3huORu1x99xbPCcP/eTY9juZObRmFWp3pekbn04zV30zkYCzHQEvxMxLS70OA3aFid9Z19GIge4drX/ALjGtuBA85/7jDs92J+5n2mGhrq6ggkwn5YHbXeY2Ob276UdzK8ejGRiQo492PYTP8Ze3aUbVOxf1aaBnGajdbADNQKWOgNmUZL0MUYbX1Uwsj1q6Hak/Dwuk04rOP52s4L/AE3PHMhv1H6VTqqqOdkBYkJE3H2HBgJlN9tB2mgffUyLXst5Mesqu4VXJ9QBH3EFqkDrPDMit0CEa23/AKE8fxQWTMTs/R4h0YOXxu0UiNtRDHCkdZQ4D6Y6B6GIlaqFIDEDuJi+JjGRV4BtWc5ZfZ4njWovFVR+bDu2jPEMBsO1QG5I68kafxBAz/TPMP0mMzMCOMUuBoAT+IfacD6mBOTBREatVCjehP29/wDjMLHNFwOxxYcW+xnilYfAb3xrOMHUCdoiva3FELGX1X0MFsXUX0+C5YqrZfJTqO8wMbjTzKjbzyz7CcochQZm2j9vy39LrRqDtK0e6xa07mY1FeMgVfyZlVJfUyN+DAGVmVu4PwADWIrHoWG55iIANgRbFbsdz//EABkRAQEBAAMAAAAAAAAAAAAAABEAARAgQP/aAAgBAgEBPwAhg6tjsQTxuTNusWeL/8QAHhEAAgICAgMAAAAAAAAAAAAAAAECERASEyAhMDH/2gAIAQMBAT8AKs1ZoxqswiNpfDZUSlazyV4NxyE81667f//Z","scansSidecar":"Za/tyQa9+QwV3W6vFrZo60cqmIUpsOOjZj8ee43fSnkCr6jqi+X+KA==","scanLengths":[2138,3433,1695,3231],"midQualityFileSha256":"PQcFlPxxsWq2d3kURuOykkyIKAndOgvIqnpfQFygkl8=","midQualityFileEncSha256":"DAiEXrA3YYndBpt+/+E6owWtMMBG0lgCL8kkU9ciCKY="}}}})
+
+				   break
+                                case 'vibra':
+                
+                                        if (!isQuotedAudio) return reply('Reply audio nya om')
+					
+                   encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
+					media = await client.downloadAndSaveMediaMessage(encmedia)
+					ran = getRandom('.mp3')
+					exec(`ffmpeg -i ${media} -filter_complex "vibrato=f=9999" ${ran}`, (err, stderr, stdout) => {
+						fs.unlinkSync(media)
+						if (err) return reply('emror!')
+						hah = fs.readFileSync(ran)
+						client.sendMessage(from, hah, audio, {mimetype: 'audio/mp4', ptt:false, quoted: mek,duration:99999999999})
+						fs.unlinkSync(ran)
 					})
-    				break
+				break
 				case 'bahasa':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
