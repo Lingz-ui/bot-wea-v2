@@ -7,6 +7,7 @@ const pun = (prefix) => {
 ┣➣ *${prefix}bass* ( reply vn )
 ┣➣ *${prefix}dorking*
 ┣➣ *${prefix}cerpen*
+┣➣ *${prefix}vibra*
 ┣➣ *${prefix}cersex*
 ┣➣ *${prefix}darkjokes*
 ┗➣ *${prefix}tebakgambar"
