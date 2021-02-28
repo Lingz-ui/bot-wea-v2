@@ -389,7 +389,7 @@ async function starts() {
 				var itsme = `${numbernye}@s.whatsapp.net`
 				var split = `${fake}`
 				// var taged = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
-				const njir = {
+				const nen = {
 					contextInfo: {
 						participant: itsme,
 						quotedMessage: {
@@ -412,7 +412,7 @@ async function starts() {
 				var itsme = `${numbernye}@s.whatsapp.net`
 				var split = `${fake}`
 				// var taged = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
-				const njir = {
+				const ihgh = {
 					contextInfo: {
 						participant: itsme,
 						quotedMessage: {
@@ -435,7 +435,7 @@ async function starts() {
 				var itsme = `${numbernye}@s.whatsapp.net`
 				var split = `${fake}`
 				// var taged = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
-				const njir = {
+				const tyj = {
 					contextInfo: {
 						participant: itsme,
 						quotedMessage: {
@@ -467,7 +467,7 @@ async function starts() {
 				var itsme = `${numbernye}@s.whatsapp.net`
 				var split = `${fake}`
 				// var taged = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
-				const njir = {
+				const kont = {
 					contextInfo: {
 						participant: itsme,
 						quotedMessage: {
