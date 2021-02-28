@@ -268,6 +268,10 @@ async function starts() {
 		        const magw = fs.readFileSync('./src/bot.mp3');
                         client.sendMessage(from, magw, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 		        }
+                        if (auto.match('bodoh')){
+		        const magw = fs.readFileSync('./src/bodoh.mp3');
+                        client.sendMessage(from, magw, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+		        }
 			colors = ['red','white','black','blue','yellow','green', 'aqua']
 			const isMedia = (type === 'imageMessage' || type === 'videoMessage')
 			const isQuotedImage = type === 'extendedTextMessage' && content.includes('imageMessage')
