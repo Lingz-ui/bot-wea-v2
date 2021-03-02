@@ -8,9 +8,15 @@ const pun = (prefix) => {
 ┣➣ *${prefix}dorking*
 ┣➣ *${prefix}cerpen*
 ┣➣ *${prefix}vibra*
-┣➣ *${prefix}cersex*
 ┣➣ *${prefix}darkjokes*
-┗➣ *${prefix}tebakgambar"
+┣➣ *${prefix}tebakgambar*
+┣➣ *${prefix}gifsticker*
+┣➣ *${prefix}slow* ( reply vn )
+┣➣ *${prefix}earrape* ( reply vn )
+┣➣ *${prefix}igstalk* ( nama ig lu tot )
+┣➣ *${prefix}katabijak*
+┣➣ *${prefix}katailham*
+┗➣ *${prefix}fakta*
 `
 }
 exports.pun = pun
